@@ -1,0 +1,53 @@
+[data-type="list"] ul {
+    padding: 0px !important;
+}
+
+section div[data-type="list"] p {
+    color: #fafafa;
+    font-size: 14px;
+    padding: 0 1.5rem;
+}
+
+section div[data-type="list"] p.bedtime {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+section div[data-type="list"] p.bedtime small {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+section div[data-type="list"] {
+    padding-top: 50px;
+    background: url(images/bg.jpg);
+    background-size: cover;
+}
+
+.scrollable li label span.time {
+    color: #fafafa !important;
+}
+
+#customTime {
+    width: auto;
+    margin: 0 1.5rem;
+}
+
+#status {
+    opacity: 0.5;
+    transform: translateY(100%);
+}
+
+#status.shown {
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#status.noshow {
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+    opacity: 0.5;
+    transform: translateY(100%);
+}

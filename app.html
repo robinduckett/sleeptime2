@@ -1,0 +1,76 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<title>Sleep Time</title>
+
+<link href="/css/input_areas.css" rel="stylesheet">
+<link href="/css/scrolling.css" rel="stylesheet">
+<link href="/css/sleeptime.css" rel="stylesheet">
+<link href="/css/switches.css" rel="stylesheet">
+<link href="/css/headers.css" rel="stylesheet">
+<link href="/css/status.css" rel="stylesheet">
+<link href="/css/lists.css" rel="stylesheet">
+<link href="/css/icons.css" rel="stylesheet">
+<link href="/css/util.css" rel="stylesheet">
+
+<script src="/javascript/jquery.js" charset="utf-8"></script>
+<script src="/javascript/moment.js" charset="utf-8"></script>
+
+<script src="/javascript/sleeptime.js" charset="utf-8"></script>
+
+<section class="skin-dark" role="region">
+    <header class="fixed">
+        <h1>Sleep Time</h1>
+    </header>
+
+    <div data-type="list" class="scrollable">
+        <ul>
+            <li>
+                <label class="pack-switch">
+                    <input id="enabled0" type="checkbox" data-ignore>
+                    <span class="time">7:30 am</span>
+                </label>
+            </li>
+
+            <li>
+                <label class="pack-switch">
+                    <input id="enabled1" type="checkbox" data-ignore>
+                    <span class="time">9:00 am</span>
+                </label>
+            </li>
+
+            <li>
+                <label class="pack-switch">
+                    <input id="enabled2" type="checkbox" data-ignore>
+                    <span class="time">10:30 am</span>
+                </label>
+            </li>
+
+            <li>
+                <label class="pack-switch">
+                    <input id="enabled3" type="checkbox" data-ignore>
+                    <span class="time">12:00 pm</span>
+                </label>
+            </li>
+        </ul>
+
+        <p>It takes around 14 minutes to fall asleep.<br />Choose a time to wake up, or pick a custom alarm time.</p>
+
+        <div id="time">
+            <input id="customTime" type="time">
+
+            <label class="pack-switch">
+                <input id="customEnabled" disabled type="checkbox" data-ignore>
+                <span></span>
+            </label>
+        </div>
+
+        <p class="bedtime">You should go to bed at HH:MM am.</p>
+    </div>
+</section>
+
+<section role="status" class="s" id="status">
+  <p>The Alarm is set for <strong>7 hours</strong> and <strong>14 minutes</strong> from now</p>
+</section>

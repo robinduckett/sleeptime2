@@ -1,0 +1,15 @@
+{
+  "name": "Sleep Time",
+  "description": "Sleep Time is an alarm clock based on sleep cycles",
+  "launch_path": "/app.html",
+  "icons": {
+    "128": "/images/app_icon_128.png",
+    "60": "/images/app_icon_60.png"
+  },
+  "version": "2.0",
+  "developer": {
+    "name": "Robin Duckett",
+    "url": "http://github.com/robinduckett"
+  },
+  "default_locale": "en"
+}
